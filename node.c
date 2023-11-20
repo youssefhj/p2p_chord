@@ -11,7 +11,8 @@
 Node create_node(char *ip, int port) {
     Node node;
 
-    node.ip = ip;
+    strcpy(node.ip, ip);
+    
     node.port = port;
     node.successor = node.id;
     node.predecessor = nil;
@@ -90,9 +91,8 @@ void fix_fingers(Node *node) {
 
     Node n = find_successor_request(nextNode, trustNode);
    
-    node->fingers[next].node_id = n.id;
-    node->fingers[next].ip = n.ip;
-    node->fingers[next].port = n.port;
+
+    insert_finger(node, n, next);
 }
 
 /**

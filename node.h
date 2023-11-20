@@ -35,6 +35,7 @@ typedef struct Node Node;
 #define nil ((void *) 0) // To respect terminologie; its equivalent to NULL
 
 Node trustNode = {.ip = "192.168.92.254", .port = 4170};
+
 int next = 0; // Used in fix_fingers
 int m = 4; // max entry in fingers; max node in this case is 2^m
 

@@ -1,6 +1,8 @@
 #ifndef _FINGER_H_
 #define _FINGER_H_
 
+#include "node.h"
+
 /**
  * struct finger - Finger structre
  * 
@@ -20,5 +22,7 @@ struct Finger {
 };
 
 typedef struct Finger Finger;
+
+void insert_finger(Node *, Node, int);
 
 #endif
