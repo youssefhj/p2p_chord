@@ -12,6 +12,7 @@
 
 /**
  * struct Socket - Structure of socket client or server
+ * 
  * @sockfd: File descriptor of the newly created socket
  * @address: Structures for handling internet addresses
  * @port: Port number
@@ -32,7 +33,7 @@ int start_socket_server(int);
 int start_socket_client(char *, int);
 
 ssize_t socket_read(int, void *, size_t);
-ssize_t socket_send(int sockfd, void *msg);
+ssize_t socket_send(int, void *);
 
 void socket_close(int);
 

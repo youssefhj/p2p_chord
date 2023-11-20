@@ -5,6 +5,7 @@
  * 
  * @port: Port number
  * 
+ * Return: Socket file descriptor
 */
 int start_socket_server(int port) {
 
@@ -53,7 +54,9 @@ int start_socket_server(int port) {
  * start_socket_client - Start the socket if the node act as client 
  * 
  * @server_ip: Ip adresse of the server
- * @port: Port number
+ * @port: Port number of the server
+ * 
+ * Return: Socket file desctiptor
  * 
 */
 int start_socket_client(char *server_ip, int port) {
